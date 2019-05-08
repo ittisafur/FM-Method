@@ -1,0 +1,506 @@
+/*-- Var --*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Raleway:400,500,600');
+:root{
+	--purple: #170B26;
+	--headingcolor: #532A8C;
+	--paragraphcolor: #141313;
+	--navyblue:#261340;
+	--primebg: #8CFFF6;
+}
+body{
+	background-color: var(--primebg); 
+}
+
+
+.bg-primary{
+	background-color: var(--purple)!important;
+}
+
+h3{
+	color: var(--headingcolor);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+h3{
+	color: var(--headingcolor);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+span::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+h3::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+li::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+a::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+b::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+h4{
+	color: var(--headingcolor);
+	font-size: 26px;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 1px;
+}
+h4::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+p{
+	color: var(--paragraphcolor);
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+}
+p::selection{
+	color: #B5FFC8;
+	background-color: var(--headingcolor);
+}
+body{
+	font-family: 'Nunito', sans-serif;
+	color: #676767;
+}
+
+.icon-bar {
+	width: 22px; 
+	height: 2px;
+	background-color: #B6B6B6;
+	display: block;
+	transition: all 0.2s;
+	margin-top: 4px
+}
+ 
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+ 
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+ 
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+ 
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+ 
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+}
+ 
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.logo{
+    width: 45%;
+    height: auto;
+}
+
+
+/*---- mainmenu */
+
+/*.mainmenu ul li {
+	display: block;
+	position: relative;
+}
+*/
+.mainmenu ul li:hover {
+  cursor: pointer;
+}
+.mainmenu ul li a{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff !important;
+	padding: 10px 30px!important;
+}
+
+/*.mainmenu ul li ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+.mainmenu ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.mainmenu ul li ul li {
+  clear: both;
+  width: 100%;
+}*/
+
+.mainmenu ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+
+.mainmenu li {
+	color: #fff;
+	display: block;
+	position: relative;
+	text-decoration: none;
+  	transition-duration: 0.5s;
+}
+  
+.mainmenu li a {
+  color: #fff;	
+}
+
+.mainmenu li:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+.mainmenu ul li ul {
+	background: var(--purple);
+	visibility: hidden;
+  	opacity: 0;
+    min-width: inherit;
+	position: absolute;
+  	transition: all 0.5s ease;
+  	/*margin-top: 1rem;*/
+	left: 0;
+  	display: none;
+
+}
+
+.mainmenu ul li ul li a{
+	font-family: 'Montserrat', sans-serif;
+	color: #ffffff !important;
+	padding: 10px 25px!important;
+	display: block;
+}
+
+.mainmenu ul li:hover > ul,
+.mainmenu ul li:focus-within > ul, /* this is the line we add */
+.mainmenu ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+.mainmenu ul li ul li {
+	clear: both;
+ 	width: 100%;
+}
+
+
+/*---- END mainmenu ----*/
+
+/*- Owl Carousel -*/
+.banner_images img{
+	width: 100%;
+}
+
+/*- END owl Carousel -*/
+
+/*---- Home Page ----*/
+
+.home-inner-content{
+	background-color: #fff;
+}
+.home-content p{
+	color: var(--paragraphcolor);
+}
+
+/*---- END Home Page ----*/
+
+/*---- About Page ----*/
+
+.about-wrapper{
+	color: var(--paragraphcolor);
+}
+.about-featured img{
+	width: 100%;
+    max-height: 500px !important;
+}
+
+.about-inner-content{
+	background-color: #fff;
+}
+
+.about-content p{
+	color: var(--paragraphcolor);
+}
+
+/*---- END About Page ----*/
+
+/*--- Admission Page ---*/
+
+.admission-wrapper{
+	color: var(--paragraphcolor);
+}
+
+.admission-inner-content{
+	background-color: #fff;
+}
+
+.admission-content p{
+	color: var(--paragraphcolor);
+}
+
+/*---- END Admission Page ----*/
+
+/*---- Sidebar ----*/
+.sidebar{
+	background-color: #fff
+}
+
+.sidebar ul{
+    margin: 0;
+    padding-left: 15px;
+}
+.sidebar ul li a{
+    padding: 5px 0px;
+    display: block;
+    color: var(--paragraphcolor);
+}
+.sidebar ul li a span{
+	display: block;
+}
+.sidebar-head h4{
+	color: #fff;
+	text-align: center;
+	margin: 0;
+	text-transform: uppercase;
+}
+.sidebar-head{
+	background-color: var(--purple);
+	padding: 5px 0px;
+}
+
+.sidebar button {
+	border-radius: 0px;
+	color:#fff;
+}
+/*---- END Sidebar ----*/
+
+/*---- Gallery Alumni ----*/
+.gallery-alumni-featured img{
+	width: 100%;
+    max-height: 500px !important;
+}
+
+/*---- END Gallery Alumni ----*/
+
+/*---- Students Alumni ----*/
+.gallery-students-featured img{
+	width: 100%;
+    max-height: 500px !important;
+}
+
+/*---- END Students Alumni ----*/
+
+/*---- Single Page ----*/
+
+
+.single-wrapper{
+	padding-top: 10%;
+}
+
+.single-wrapper ul{
+    padding: 0px;
+}
+
+.single-wrapper ul li a{
+	padding: 10px 0px;
+	display: block;
+}
+
+/*---- END Single Page ----*/
+
+
+/*---- Contact ----*/
+.first-layer p{
+	color: var(--paragraphcolor);
+}
+
+.contact-content i{
+	font-size: 50px;
+	color: var(--purple);
+}
+
+.contact-content h4{
+	text-transform: uppercase;
+}
+
+.contact-second  p{
+	text-transform: uppercase;
+	font-size: 16px;
+	color: var(--headingcolor);
+	margin: 0;
+}
+
+/*---- END Contact ----*/
+
+
+label{
+	font-family: 'Nunito', sans-serif;
+}
+
+input, textarea {
+	font-family: 'Nunito', sans-serif;
+	color: var(--headingcolor)!important;
+	font-weight: bold !important;
+}
+
+
+
+
+
+/*---- Footer Section ----*/
+
+footer h4{
+	color: #fff;
+}
+
+.last-footer p a{
+	color: #fff!important;
+}
+
+.first-footer{
+	background-color: var(--navyblue);
+}
+
+footer > a, li, p{
+	color: #fff;
+}
+
+.left-footer a{
+	text-decoration: underline;
+	color: var(--headingcolor);
+}
+
+.left-footer p{
+	padding-left: 5px;
+}
+
+.center-footer, .right-footer, .center-right-footer{
+	margin-top: 15px;
+}
+
+.center-footer ul{
+	padding-left: 2px;
+	
+}
+.center-footer li {
+	list-style: none;
+	display: block;
+}
+
+.center-right-footer ul{
+	padding-left: 2px;
+}
+.center-right-footer li{
+	list-style: none;
+	display: block;
+}
+
+.center-right-footer li a {
+	color:inherit
+}
+
+.right-footer ul{
+	padding: 0;
+	
+}
+.right-footer ul li{
+	list-style: none;
+	display: inline-block;
+}
+.right-footer ul li a{
+	display: block;
+	color: #ffffff; 
+	padding: 10px 15px;
+	transition: all .6s;
+}
+
+.right-footer ul li a:hover {
+	
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3)
+}
+
+.lower-footer a{
+	text-decoration: underline;
+	color: var(--headingcolor);
+}
+
+
+.last-footer{
+	background-color: var(--purple);
+}
+.last-footer > p{
+	margin: 0;
+}
+
+/*---- END Footer Section ----*/
+
+/* Utility class */
+.tz-gallery .lightbox img{
+	margin-bottom: 0px;
+}
+
+.product-wrapper img{
+	padding-bottom: 0px !important;
+}
+
+.tz-gallery{
+	padding: 0px;
+}
+
+.page-title h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	letter-spacing: 5px;
+	text-transform:uppercase;
+	font-weight: 500
+}
+.pad-t5{
+	padding-top: 55px;
+}
+.pad-t8{
+	padding-top: 80px;
+}
+
+
+/* END Utility class */
+
+.product-wrapper img{
+	padding-bottom: 15px;
+}
+
+
+
+
+
